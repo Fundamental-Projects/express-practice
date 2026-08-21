@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/contact-me", (req, res) => {
+router.get("/", (req, res) => {
   res.sendFile("./contact-me.html", { root: __dirname });
 });
 
