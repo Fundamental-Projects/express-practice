@@ -6,9 +6,9 @@ const aboutRouter = require("./routes/About");
 const conctactMeRouter = require("./routes/Contact-me");
 const notFoundPageRouter = require("./routes/404");
 
-// app.get("/", (req, res) => {
-//   res.sendFile("./index.html", { root: __dirname });
-// });
+app.get("/", (req, res) => {
+  res.sendFile("./index.html", { root: __dirname });
+});
 
 app.use("/about", aboutRouter);
 app.use("/contact-me", conctactMeRouter);
